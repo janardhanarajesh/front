@@ -19,7 +19,7 @@ var pin=localStorage.getItem('userdata')
 //    let mail=localStorage.getItem('usermail')
 //    let pass=localStorage.getItem('userpass')
 useEffect(() => {
-    axios.get('https://backend-2-i7cd.onrender.com/'+pin).then((res) => {
+    axios.get('https://backend-2-i7cd.onrender.com/gets/'+pin).then((res) => {
         console.log(res.data.getdet)
         if (res.data.msg === "notfound") {
             alert(" not found");
