@@ -6,7 +6,7 @@ function Befnot()
     const [note,getnote]=useState([])
     useEffect(()=>
     {
-        axios.get('https://backend-2-i7cd.onrender.com/getnot').then((res)=>
+        axios.get('https://backend-2-i7cd.onrender.com/getnot/').then((res)=>
         {
             getnote(res.data.notu)
             let ret=res.data.notu
@@ -27,7 +27,7 @@ function Befnot()
     },[1])
     const delnot=(kl)=>
     {
-        axios.delete('http://localhost:1500/delnote'+kl).then((res)=>
+        axios.delete('https://backend-2-i7cd.onrender.com/delnote'+kl).then((res)=>
         {
             alert('sucessfully deleted')
         })
