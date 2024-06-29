@@ -42,7 +42,7 @@ useEffect(()=>
 const putdu=(e)=>{
 e.preventDefault();
 let _Id=localStorage.getItem('idl')
-axios.put('http://localhost:1500/putstud/'+_Id,{dtaa}).then((res)=>{
+axios.put('https://backend-2-i7cd.onrender.com/putstud/'+_Id,{dtaa}).then((res)=>{
     if(res.data.msg=="edit")
     {
         alert('updated successfully ')
