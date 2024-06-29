@@ -26,7 +26,7 @@ var i=0;
 
         else{
         // let usermail=document.getElementById('inp1').value    
-            axios.get('https://backend-2-i7cd.onrender.com/'+otp+"/"+esd).then((res)=>{
+            axios.get('https://backend-2-i7cd.onrender.com/getpassword/'+otp+"/"+esd).then((res)=>{
            if(res.data.msd=="notfound")
            {
             alert('not found')
