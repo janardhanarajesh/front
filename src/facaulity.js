@@ -14,7 +14,7 @@ var password=details.password
        
     
         ef.preventDefault();
-axios.get('https://backend-2-i7cd.onrender.com/'+name+"/"+password).then((res)=>
+axios.get('https://backend-2-i7cd.onrender.com/faclog/'+name+"/"+password).then((res)=>
 {
     if(res.data.msg=='notfound')
     {
